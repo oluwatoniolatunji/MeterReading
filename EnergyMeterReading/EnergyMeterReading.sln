@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyMeterReading.DataAccess", "EnergyMeterReading.DataAccess\EnergyMeterReading.DataAccess.csproj", "{4C2F2EA4-5D34-4000-922F-C624D45108F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyMeterReading.DataAccess.Tests", "EnergyMeterReading.DataAccess.Tests\EnergyMeterReading.DataAccess.Tests.csproj", "{A796D813-269E-4F67-B64F-B5B7980D2F9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C2F2EA4-5D34-4000-922F-C624D45108F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2F2EA4-5D34-4000-922F-C624D45108F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2F2EA4-5D34-4000-922F-C624D45108F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2F2EA4-5D34-4000-922F-C624D45108F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A796D813-269E-4F67-B64F-B5B7980D2F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A796D813-269E-4F67-B64F-B5B7980D2F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A796D813-269E-4F67-B64F-B5B7980D2F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A796D813-269E-4F67-B64F-B5B7980D2F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90AC04AE-92DD-43F1-A121-AEDCA3486418}
+	EndGlobalSection
+EndGlobal
