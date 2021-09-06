@@ -15,6 +15,8 @@ namespace EnergyMeterReading.Api
 {
     public class Startup
     {
+        private readonly string AppOrigin = "AppOrigin";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -40,6 +42,14 @@ namespace EnergyMeterReading.Api
 
         public void ConfigureDefaultServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: AppOrigin, builder =>
+                {
+                    builder.WithOrigins(Configuration["Cors:AllowedOrigin"]);
+                });
+            });
+
             services.AddRepositoryDependencies();
 
             services.AddControllers(options =>
@@ -82,6 +92,8 @@ namespace EnergyMeterReading.Api
             {
                 c.SwaggerEndpoint("./v1/swagger.json", "Meter Reading APIs");
             });
+
+            app.UseCors(AppOrigin);
 
             app.UseHttpsRedirection();
 

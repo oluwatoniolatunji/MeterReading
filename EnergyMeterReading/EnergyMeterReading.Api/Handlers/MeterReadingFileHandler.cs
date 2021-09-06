@@ -40,7 +40,7 @@ namespace EnergyMeterReading.Api.Handlers
             }
         }
 
-        public bool IsFileValid(string fileName)
-            => fileName.EndsWith(".csv");
+        public bool IsFileValid(IFormFile formFile)
+            => formFile != null && formFile.FileName.EndsWith(".csv");
     }
 }

@@ -31,7 +31,7 @@ namespace EnergyMeterReading.Api.Controllers
         {
             var response = new ApiResponseDto();
 
-            var isFileValid = meterReadingFileHandler.IsFileValid(formFile.FileName);
+            var isFileValid = meterReadingFileHandler.IsFileValid(formFile);
 
             if (isFileValid)
             {

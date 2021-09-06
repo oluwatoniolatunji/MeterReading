@@ -7,6 +7,6 @@ namespace EnergyMeterReading.Api.Handlers
     public interface IMeterReadingFileHandler
     {
         List<MeterReadingDto> GetMeterReadings(IFormFile formFile);
-        bool IsFileValid(string fileName);
+        bool IsFileValid(IFormFile formFile);
     }
 }
