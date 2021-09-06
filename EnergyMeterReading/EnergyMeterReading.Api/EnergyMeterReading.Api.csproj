@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\EnergyMeterReading.Service\EnergyMeterReading.Service.csproj" />
   </ItemGroup>
 

@@ -80,7 +80,7 @@ namespace EnergyMeterReading.Api
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Meter Reading APIs");
+                c.SwaggerEndpoint("./v1/swagger.json", "Meter Reading APIs");
             });
 
             app.UseHttpsRedirection();
