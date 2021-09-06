@@ -1,5 +1,4 @@
-﻿using EnergyMeterReading.Api.Controllers;
-using EnergyMeterReading.Api.Handlers;
+﻿using EnergyMeterReading.Api.Handlers;
 using EnergyMeterReading.DataAccess.Contracts;
 using EnergyMeterReading.DataAccess.Implementation;
 using EnergyMeterReading.Service.Contracts;

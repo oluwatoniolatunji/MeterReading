@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 
-namespace EnergyMeterReading.Api.Controllers
+namespace EnergyMeterReading.Api.Handlers
 {
     public interface IMeterReadingFileHandler
     {
