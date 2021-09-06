@@ -1,4 +1,6 @@
-﻿using EnergyMeterReading.DataAccess.Contracts;
+﻿using EnergyMeterReading.Api.Controllers;
+using EnergyMeterReading.Api.Handlers;
+using EnergyMeterReading.DataAccess.Contracts;
 using EnergyMeterReading.DataAccess.Implementation;
 using EnergyMeterReading.Service.Contracts;
 using EnergyMeterReading.Service.Implementation;
@@ -16,6 +18,8 @@ namespace EnergyMeterReading.Api.Middlewares
             services.AddTransient<IMeterReadingDataAccess, MeterReadingDataAccess>();
             services.AddTransient<IMeterReadingService, MeterReadingService>();
             services.AddTransient<IMeterReadingMapper, MeterReadingMapper>();
+
+            services.AddTransient<IMeterReadingFileHandler, MeterReadingFileHandler>();
 
             return services;
         }

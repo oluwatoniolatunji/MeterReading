@@ -19,7 +19,7 @@ namespace EnergyMeterReading.Service.Implementation
         {
             var client = new RestClient(Configuration["AccountService:BaseUrl"]);
 
-            var request = new RestRequest($"/api/Account/GetAccount/{accountId}", Method.GET);
+            var request = new RestRequest($"/api/account-management/accounts/{accountId}", Method.GET);
 
             var response = await client.ExecuteAsync<ApiResponseDto>(request);
 
