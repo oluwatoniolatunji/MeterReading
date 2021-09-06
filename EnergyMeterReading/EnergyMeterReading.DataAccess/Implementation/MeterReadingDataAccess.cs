@@ -1,6 +1,7 @@
 ﻿using EnergyMeterReading.DataAccess.Contracts;
 using EnergyMeterReading.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,16 @@ namespace EnergyMeterReading.DataAccess.Implementation
         public MeterReadingDataAccess(MeterReadingDbContext meterReadingDbContext)
         {
             this.meterReadingDbContext = meterReadingDbContext;
+        }
+
+        public async Task<bool> ExistsAsync(int accountId, DateTime meterReadingDateTime, string meterReadValue)
+        {
+            var meterReading = await meterReadingDbContext.MeterReadings
+                .FirstOrDefaultAsync(x => x.AccountId == accountId &&
+                                            x.MeterReadingDateTime == meterReadingDateTime &&
+                                            x.MeterReadValue == meterReadValue);
+
+            return meterReading != null;
         }
 
         public async Task<List<MeterReading>> GetAsync(int accountId)

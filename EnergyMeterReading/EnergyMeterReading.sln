@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyMeterReading.DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyMeterReading.DataAccess.Tests", "EnergyMeterReading.DataAccess.Tests\EnergyMeterReading.DataAccess.Tests.csproj", "{A796D813-269E-4F67-B64F-B5B7980D2F9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyMeterReading.Service.Tests", "EnergyMeterReading.Service.Tests\EnergyMeterReading.Service.Tests.csproj", "{980217E9-3E58-4EB4-AAF5-43BF051CA956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyMeterReading.Service", "EnergyMeterReading.Service\EnergyMeterReading.Service.csproj", "{51F0BF92-9A5E-4B24-A3A5-234B12E6C718}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A796D813-269E-4F67-B64F-B5B7980D2F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A796D813-269E-4F67-B64F-B5B7980D2F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A796D813-269E-4F67-B64F-B5B7980D2F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980217E9-3E58-4EB4-AAF5-43BF051CA956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980217E9-3E58-4EB4-AAF5-43BF051CA956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980217E9-3E58-4EB4-AAF5-43BF051CA956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980217E9-3E58-4EB4-AAF5-43BF051CA956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F0BF92-9A5E-4B24-A3A5-234B12E6C718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F0BF92-9A5E-4B24-A3A5-234B12E6C718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F0BF92-9A5E-4B24-A3A5-234B12E6C718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F0BF92-9A5E-4B24-A3A5-234B12E6C718}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -70,5 +70,24 @@ namespace EnergyMeterReading.DataAccess.Tests
             return await meterReadingDbContext.MeterReadings.CountAsync(a => a.AccountId == accountId);
         }
 
+        [Test]
+        public async Task ExistsAsync_Is_True_If_MeterReading_Exists()
+        {
+            var mockMeterReading = await meterReadingDbContext.MeterReadings.FirstOrDefaultAsync();
+
+            var exists = await meterReadingDataAccess
+                .ExistsAsync(mockMeterReading.AccountId, mockMeterReading.MeterReadingDateTime, mockMeterReading.MeterReadValue);
+
+            Assert.That(exists, Is.True);
+        }
+
+        [Test]
+        public async Task ExistsAsync_Is_False_If_MeterReading_Does_NOT_Exist()
+        {
+            var exists = await meterReadingDataAccess
+                .ExistsAsync(1245, DateTime.Now, "09872");
+
+            Assert.That(exists, Is.False);
+        }
     }
 }
