@@ -28,7 +28,7 @@ namespace EnergyMeterReading.Api.Handlers
                                      select new MeterReadingDto
                                      {
                                          AccountId = Convert.ToInt32(reading.AccountId),
-                                         MeterReadingDateTime = Convert.ToDateTime(reading.MeterReadingDateTime),
+                                         MeterReadingDateTime = DateTime.ParseExact(reading.MeterReadingDateTime, "dd/MM/yyyy HH:mm", null),
                                          MeterReadValue = reading.MeterReadValue
                                      }).ToList();
 
@@ -36,7 +36,7 @@ namespace EnergyMeterReading.Api.Handlers
             }
             catch
             {
-                throw new Exception("Error occurred while processing file. Ensure that file is properly formatte,d has the following headers AccountId, MeterReadingDateTime, MeterReadValue and contains valid date times");
+                throw;
             }
         }
 
